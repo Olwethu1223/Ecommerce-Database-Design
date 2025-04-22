@@ -1,6 +1,11 @@
 CREATE DATABASE ecommerce_db;
 USE ecommerce_db;
 
+-- DROP statements for clean re-creation
+DROP TABLE IF EXISTS product_image, product_item, product_variation, product_attribute,
+    product, color, size_option, size_category, product_category, brand,
+    attribute_category, attribute_type CASCADE;
+
 -- Brand Table
 CREATE TABLE brand (
     brand_id INT AUTO_INCREMENT PRIMARY KEY,
